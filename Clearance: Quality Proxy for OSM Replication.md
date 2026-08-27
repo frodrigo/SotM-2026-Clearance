@@ -18,6 +18,7 @@ frederic@teritorio.fr
 <style>
   li li { font-size: 70% }
   li li li { font-size: 90% }
+  code { font-size: 80%; background: #F3F3F3 }
 </style>
 
 ---
@@ -25,10 +26,10 @@ frederic@teritorio.fr
 ## Context
 
 - OSM Continuous update: add, update, improve, fix
-- Quickly deploy changes
-- ➡ But need Quality assurance
+- Deploy changes quickly
+- ➡ But need Quality Assurance
 
-e.g. POIs (Local government), road network (Civil defense)
+POIs (local gov.), road network (civil defense)...
 
 ![Civil defense of Navarra](include/navarra.jpeg)
 
@@ -47,7 +48,7 @@ e.g. POIs (Local government), road network (Civil defense)
 ---
 
 # Check changes
-# But where?
+# But when?
 
 ----
 
@@ -55,15 +56,15 @@ e.g. POIs (Local government), road network (Civil defense)
 
 Check for
 - State Before Contributions
-  - JOSM Validator
+  - Editors: JOSM Validator
 - State After Contributions
-  - Keep Right, OSM Inspector, Osmose-QA*
+  - QA Review: Keep Right, OSM Inspector, Osmose-QA*
 - Changes After Contributions
-  - OSMCha
+  - Changes Review: OSMCha
 
 ----
 
-Another Way
+Another way is possible
 
 ## Check Before Replication
 
@@ -95,7 +96,7 @@ Invariant: Quality of Replication is only increasing
 
 ---
 
-# Fast
+# Partial Update,
 # But coherant
 
 ----
@@ -121,17 +122,17 @@ Spatially coherent changes set
 
 ----
 
-### Hierarchical structure of LoCha
+### Keep Coherance of Changes
 
 - LoCha: cluster within distance – semantic context
   - Connected component: topological connection – referential integrity
-    - Semantic group: subpart of the same business object
+    - Semantic group: subpart of the same business object - business integrity
       - OSM Object: technical
 
 ---
 
 # Logical History
-### Semantic Spatio-temporal conflation
+#### Semantic Spatio-temporal conflation
 
 ----
 
@@ -157,10 +158,11 @@ Apply rules on Semantic and Comprehensive changes
 
 ----
 
-## Time-conflated Semantic Objects
-As a Tool: OSM Local History - [Github](https://teritorio.github.io/openstreetmap-logical-history-component/) -
-[Demo](https://teritorio.github.io/openstreetmap-logical-history-component/?date_start=2024-12-09T23:00:00.000Z&date_end=2024-12-14T23:00:00.000Z&bbox=-1.6537454710167148,42.685107065011486,-1.6509720668953156,42.68686379572838#locha-demo-group-33)
+### Time-conflated Semantic Objects
 
+As a Tool: OSM Local History ([demo](https://teritorio.github.io/openstreetmap-logical-history-component/?date_start=2024-12-09T23:00:00.000Z&date_end=2024-12-14T23:00:00.000Z&bbox=-1.6537454710167148,42.685107065011486,-1.6509720668953156,42.68686379572838#locha-demo-group-33))
+
+[github.com/teritorio/openstreetmap-logical-history](https://github.com/teritorio/openstreetmap-logical-history)
 
 ![Example OSM-LH](include/osm-lh.webp)
 
@@ -179,7 +181,7 @@ By semantic conflation match
 - Geometry moved > 10 m
 - Blacklisted tags or users
 - Changes by a new contributor
-- Commented changeset
+- Changeset with Commented
 - Hold on “hot” changes:
   - area still being updated
   - objects quickly fixed or reverted by the OSM community
@@ -240,18 +242,18 @@ Store, process and update many OSM extracts
 
 Small areas projects
 - Campuses...
-- ➡ Use alternative sources:
-  - Overpass API, GeoDesk/GOL/Parquet or ohsome-planet/Parquet.
+- ➡ Use alternative sources
+  - Overpass API, GeoDesk/GOL/Parquet or ohsome-planet/Parquet
 
 Sparse objects, in a full country
-- bicycle routes
-- emergency POIs
-- ➡ Use a partial database:
-  - require **augmented diff** or a way to _rescue_ missing referenced objects
+- Bicycle routes
+- Emergency POIs
+- ➡ Use a partial database
+  - Require **augmented diff** or a way to _rescue_ missing referenced objects
 
 ----
 
-### Optimization: too big objects
+### Optimization: too big
 
 Big objects and Big LoCha clusters
 
@@ -281,12 +283,11 @@ Replace greedy conflation with a least squares matching resolution
 ----
 
 ## Clearance
-## as OSM Data Proxy
+### as OSM Data Proxy
 
 Standard Input / Output
 - OSM PBF Extract
-- Diff update
-  - according to validation order
+- Diff update: according to validation order
 
 Acts as an Overpass-like API to access validated DB
 - [Overpass Language parser in Rust](https://github.com/teritorio/overpass_parser_rust)
@@ -314,18 +315,18 @@ Setup your own Instance or
 
 ask for a demo project on our public instance
 
-- https://app.clearance.teritorio.xyz
-- https://teritorio.github.io/openstreetmap-logical-history-component/
+https://app.clearance.teritorio.xyz
 
 ----
 
 ## Clearance
-
 `takeaway=slides`
 
-https://s.carto.guide/djamig
+https://app.clearance.teritorio.xyz
 
 ![](include/qrcode.svg)
 
-<img src="include/logo-teritorio.svg" height="50px"/>
-<img src="include/nlnet.svg" height="50px"/>
+https://s.carto.guide/fhn54m
+
+<img src="include/logo-teritorio.svg" height="50px" style="position: fixed; bottom: 0; left: 0;"/>
+<img src="include/nlnet.svg" height="50px" style="position: fixed; bottom: 0; right: 0;"/>
