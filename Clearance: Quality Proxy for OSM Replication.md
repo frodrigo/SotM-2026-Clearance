@@ -38,7 +38,7 @@ POIs (local gov.), road network (civil defense)...
 ## Expectation
 
 - Review potentially harmful changes
-  - Focused on objects that matter
+  - Focus on objects that matter
   - Minimize human review workload
     - Significant and comprehensive changes
 - Deploy OSM changes fast
@@ -97,7 +97,7 @@ Invariant: Quality of Replication is only increasing
 ---
 
 # Partial Update,
-# But coherant
+# But coherent
 
 ----
 
@@ -122,7 +122,7 @@ Spatially coherent changes set
 
 ----
 
-### Keep Coherance of Changes
+### Keep Coherence of Changes
 
 - LoCha: cluster within distance – semantic context
   - Connected component: topological connection – referential integrity
@@ -181,7 +181,7 @@ By semantic conflation match
 - Geometry moved > 10 m
 - Blacklisted tags or users
 - Changes by a new contributor
-- Changeset with Commented
+- Changeset with comments
 - Hold on “hot” changes:
   - area still being updated
   - objects quickly fixed or reverted by the OSM community
@@ -202,8 +202,8 @@ By LoCha
 ## Next Rules
 
 New validators, funded by NLNet
-* Fetch user blocks and use them in score
-* Contributors' reputation: based on external tools / APIs
+- Fetch user blocks and use them in score
+- Contributors' reputation: based on external tools / APIs
 
 ----
 
@@ -215,7 +215,7 @@ New validators
   - `highway=path` + `bicycle=designated` ⇄ `highway=cycleway`
 - External Rules
   - Like MapCSS from JOSM or Osmose-QA validation
-- Match at External Datasets
+- Match with External Datasets
   - Conflation by ref or geometry
   - Geometry acceptability
   - Tags acceptability
@@ -225,10 +225,10 @@ New validators
 ## Roadmap: Rules
 
 Improvement
-* Delayed: function of parameters (user score, etc.)
-* Network: subclass it
-  * Road network with oriented edges, road barriers
-  * Power grid
+- Delayed: function of parameters (user score, etc.)
+- Network: subclass it
+  - Road network with oriented edges, road barriers
+  - Power grid
 
 ---
 
